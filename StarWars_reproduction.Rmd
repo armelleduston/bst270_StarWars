@@ -1,0 +1,20 @@
+---
+title: "Star Wars Reproduction"
+author: "Armelle Duston"
+date: "2025-01-21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+In this first step, we install (if necessary) and import relevant libraries
+```{r}
+install.packages(c("ggplot2", "dplyer"))
+
+library(ggplot2)
+library(dplyr)
+```
+
