@@ -15,7 +15,7 @@ In this first step, we install (if necessary) and import relevant libraries.
 ```{r}
 
 # Vector of package names
-packages <- c("ggplot2", "dplyr", "forcats")
+packages <- c("ggplot2", "dplyr")
 
 # Install any packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
@@ -30,7 +30,7 @@ invisible(lapply(packages, library, character.only = TRUE))
 
 ## Import Data
 
-Import data from "StarWars.csv". Raw data has column names on two different rows, manually define column-names and remove spaces
+Import data from "StarWars.csv". Raw data has column names on two different rows, manually define column-names and remove spaces for ease of use. 
 ```{r}
 
 df <- read.csv("StarWars.csv", skip = 2, header = FALSE)
