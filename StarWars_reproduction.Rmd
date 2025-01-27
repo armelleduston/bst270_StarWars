@@ -30,7 +30,7 @@ invisible(lapply(packages, library, character.only = TRUE))
 
 ## Import Data
 
-Import data from "StarWars.csv". Raw data has column names on two different rows, manually define column-names and remove spaces for ease of use. 
+Import data from "StarWars.csv". Raw data has column names on two different rows, manually define column-names and remove spaces for ease of use. Output new clean dataframe as "clean_df.csv" and deposit in Data folder. 
 ```{r}
 
 df <- read.csv("Data/StarWars.csv", skip = 2, header = FALSE)
@@ -108,6 +108,7 @@ filtered_df1 <- filter(df, Seen_Ep_I == 1 |
                          Seen_Ep_V == 1 | 
                          Seen_Ep_VI == 1)
 
+# Note: an attempt was made to use the variable "seen_any" to filter the the dataframe, but the results from this did not correspond to the correct figure, while the above filtering command does. 
 
 # Make a dataframe to plot the barchart
 fig1_df <- data.frame(round(apply(filtered_df1[,4:9],
@@ -216,5 +217,6 @@ ggplot(fig2_df, aes(x = film_names, y = ranked_1)) +
 
 ```
 
+I was successfully able to recreate both of the first two figures in the article with the data provided. 
 
 
