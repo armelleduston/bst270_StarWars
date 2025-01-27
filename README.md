@@ -16,7 +16,7 @@ use the "Run all" command). To recreate "StarWars_reproduction.pdf", knit the Rm
 ## Additional Information
 
 ### Data Dictionary
-A data dictionary title "Data_dict.csv" was added including questions and possible responses linked to each variable in 
+A data dictionary title "Data_dict.csv" is included with the survey questions and data types linked to each variable in 
 the dataset. 
 
 ### Source
