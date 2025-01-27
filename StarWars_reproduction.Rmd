@@ -33,7 +33,7 @@ invisible(lapply(packages, library, character.only = TRUE))
 Import data from "StarWars.csv". Raw data has column names on two different rows, manually define column-names and remove spaces for ease of use. 
 ```{r}
 
-df <- read.csv("StarWars.csv", skip = 2, header = FALSE)
+df <- read.csv("Data/StarWars.csv", skip = 2, header = FALSE)
 
 colnames(df) <- c("RespondentID", 
                   "Seen_any",
@@ -74,6 +74,7 @@ colnames(df) <- c("RespondentID",
                   "Education",
                   "Location")
 
+write.csv(df,"Data/clean_data.csv", row.names = FALSE)
 ```
 
 

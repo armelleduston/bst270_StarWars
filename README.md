@@ -11,13 +11,14 @@ to run this analysis.
 
 ### Generating the output
 To run the analysis, ensure that your coding environment is clear and run all of the code chunks sequentially (or simply
-use the "Run all" command). To recreate "StarWars_reproduction.pdf", knit the Rmd file. 
+use the "Run all" command). Running all chunks will also output a "clean_df.csv" file in the "Data: folder. To recreate 
+"StarWars_reproduction.pdf", knit the Rmd file.  
 
 ## Additional Information
 
 ### Data Dictionary
-A data dictionary title "Data_dict.csv" is included with the survey questions and data types linked to each variable in 
-the dataset. 
+A data dictionary title "Data_dict.csv" is included in the "Data" folder with the survey questions and data types linked 
+to each variable in the dataset. 
 
 ### Source
 The original data and analysis can be found at 
